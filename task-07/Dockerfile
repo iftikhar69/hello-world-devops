@@ -1,15 +1,11 @@
-# Use official Python image as base
-FROM python:3.10-slim
+# Use Nginx official image
+FROM nginx:alpine
 
-# Set working directory inside container
-WORKDIR /app
+# Copy the website files into Nginx's html folder
+COPY . /usr/share/nginx/html
 
-# Copy local files into container
-COPY hello.py .
+# Expose port 80 for the web server
+EXPOSE 80
 
-# Default command to run when container starts
-CMD ["python", "hello.py"]
-
-
-#   Output   
-#   Hello, World from my feature branch!
+# Start Nginx in the foreground
+CMD ["nginx", "-g", "daemon off;"]
