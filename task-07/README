@@ -1,4 +1,7 @@
- 🐳 Task 7: Dockerizing a Static Web Application
+task-07/Screenshot from 2025-11-05 20-34-49.png
+
+
+🐳 Task 7: Dockerizing a Static Web Application
 
  🎯 Objective
 Containerize a simple static web app (HTML, CSS, JS) using Docker and Nginx.
