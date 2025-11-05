@@ -1,4 +1,37 @@
-name: CI Pipeline
+#   ---  Task-04    ----
+# name: CI Pipeline
+
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: 🛒 Checkout repository
+#         uses: actions/checkout@v3
+
+#       - name: 🐍 Set up Python
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: '3.x'
+
+#       - name: 📦 Install dependencies (if any)
+#         run: |
+#           echo "No dependencies to install for Hello World"
+
+#       - name: 🧪 Run test command
+#         run: |
+#           echo "Running CI Pipeline..."
+#           python hello.py
+
+
+#     ---     task 05   ---
+name: CI Pipeline with Artifact
 
 on:
   push:
@@ -19,11 +52,18 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: 📦 Install dependencies (if any)
-        run: |
-          echo "No dependencies to install for Hello World"
-
-      - name: 🧪 Run test command
+      - name: 🧪 Run Hello World script
         run: |
           echo "Running CI Pipeline..."
           python hello.py
+
+      - name: 📦 Create artifact (ZIP)
+        run: |
+          mkdir output
+          zip -r output/hello-world-devops.zip .
+
+      - name: 🗄️ Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hello-world-artifact
+          path: output/hello-world-devops.zip
