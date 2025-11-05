@@ -1,0 +1,11 @@
+ 📦 Task 6: Artifact Creation
+
+ 🎯 Objective
+Modify the CI pipeline to package the application and store the build artifact.
+
+ 🧩 Steps I Performed
+1. Updated `.github/workflows/ci.yml` to add ZIP creation step  
+2. Used `actions/upload-artifact` to store the build output  
+3. Verified artifact download from GitHub Actions → Artifacts tab
+
+ 🧪 Example Output

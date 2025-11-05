@@ -1,0 +1,11 @@
+ 🐳 Task 7: Dockerizing the Application
+
+ 🎯 Objective
+Containerize the Hello World application using Docker.
+
+ 🧩 Steps I Performed
+1. Created a Dockerfile in the repo root  
+2. Built the Docker image: `docker build -t hello-world-app .`  
+3. Ran the container to verify output: `docker run --rm hello-world-app`  
+
+ 🧪 Expected Output
