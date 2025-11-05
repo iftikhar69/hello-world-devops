@@ -1,6 +1,6 @@
 # Hello World DevOps 🚀
 
-This repository is part of my DevOps learning journey — assigned by my mentor.  
+This repository is part of my DevOps learning journey —  
 It demonstrates how to use **Git**, **GitHub**, and **branching workflows** for collaboration.
 
 ---
@@ -22,4 +22,5 @@ Understand the Git workflow and collaboration using branches and Pull Requests (
    ```bash
    git clone https://github.com/iftikhar69/hello-world-devops.git
    cd hello-world-devops
+# hello-world-devops
 # hello-world-devops
