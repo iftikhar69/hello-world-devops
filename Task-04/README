@@ -1,0 +1,12 @@
+## 🗄️ Task 4: Automated File Backup
+
+### 🎯 Objective
+Practice file manipulation and scheduling with Bash scripting.
+
+### 🧩 Steps I Performed
+1. Created `backup.sh` to compress and move files
+2. Used `tar` command to create `backup-YYYYMMDD.tar.gz`
+3. Verified successful backup creation in `/home/iftikhar/backups`
+4. (Optional) Configured `cron` job to run daily
+
+### 🧪 Example Output

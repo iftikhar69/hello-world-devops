@@ -1,0 +1,15 @@
+Task 5: Simple CI Pipeline Setup
+
+🎯 Objective
+Set up a CI pipeline using GitHub Actions to automate basic checks on each push.
+
+🧩 Steps I Performed
+1. Created `.github/workflows/ci.yml`
+2. Configured workflow to:
+   - Trigger on push or PR to `main`
+   - Checkout code
+   - Run `hello.py`
+3. Committed and pushed workflow file
+4. Verified successful run in GitHub Actions tab
+
+ 🧪 Example Output

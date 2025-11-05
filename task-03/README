@@ -1,0 +1,19 @@
+## ⚙️ Task 3: Basic Server Monitoring Script
+
+### 🎯 Objective
+Write a Bash or Python script to display disk, CPU, and memory usage.
+
+### 🧩 Steps I Performed
+1. Created `monitor.sh` (Bash) or `monitor.py` (Python)
+2. Used Linux commands / psutil library to get system stats
+3. Made the script executable and ran it locally
+4. Verified readable system output
+
+### 🧪 Sample Output
+
+`
+🧠 CPU Usage: 13%
+💾 Memory Usage: 52%
+📦 Disk Usage: 34%
+✅ Monitoring completed.
+`
